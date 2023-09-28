@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('http://4.bp.blogspot.com/-gty4IGIQFjc/UgN7Ot2taWI/AAAAAAAAAcM/P_QME9sHXYM/s1600/Harley+davidson+vrscf+bike+HD+wallpaper+2.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      backdrop-filter: blur(10px);
+    }
+
+    .login-card {
+      background-color: rgba(255, 255, 255, 0.9);
+      width: 300px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .login-card h2 {
+      margin-bottom: 20px;
+    }
+
+    .login-card input {
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .login-card button {
+      background-color: #ff9900;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .login-card button:hover {
+      background-color: #e68300;
+    }
+  </style>
+  <title>Login</title>
+</head>
+<body>
+  <div class="login-card">
+    <h2>Login</h2>
+    <form id="loginForm" action="/login" method="post">
+      <input type="text" placeholder="Username" name="username" required>
+      <input type="password" placeholder="Password" name="password" required>
+      <button  type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="/signup">Sign Up</a></p>
+  </div>
+</body>
+</html>
